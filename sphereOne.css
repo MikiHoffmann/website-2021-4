@@ -1,0 +1,42 @@
+/* animations */
+
+#sphereOneContainer {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10em;
+    height: 10em;
+    text-align: center;
+    animation-name: jump;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes jump {
+    0% {top: 45%; left: 25%}
+    25% {top: 25%; left: 75%}
+    50% {top: 75%; left: 60%}
+    100% {top: 45%; left: 25%}
+}
+#sphereOne {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 10em;
+    width: 10em;
+    margin: 0 auto 1em auto;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -6px 60px 70px rgb(0,0,0), inset 3px -3px 20px rgb(240,240,240), inset 35px -35px 50px rgb(0,0,0), inset 40px 40px 60px rgb(240,240,240), inset -18px -18px 30px rgb(0,0,0), inset 6px -6px 10px rgb(0,0,0);
+    animation-name: shadow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes shadow {
+    0% {box-shadow: -50px -15px 70px rgb(0,0,0), inset 3px -3px 20px rgb(240,240,240), inset 35px -35px 50px rgb(0,0,0), inset 40px 40px 60px rgb(240,240,240), inset -18px -18px 30px rgb(0,0,0), inset 6px -6px 10px rgb(0,0,0);}
+    25% {box-shadow: 40px -40px 80px rgb(0,0,0), inset 3px -3px 20px rgb(240,240,240), inset 20px -20px 50px rgb(0,0,0), inset 40px 30px 60px rgb(240,240,240), inset -18px -18px 30px rgb(0,0,0), inset 6px -6px 10px rgb(0,0,0);}
+    50% {box-shadow: -6px 60px 70px rgb(0,0,0), inset 3px -3px 20px rgb(240,240,240), inset 20px -20px 50px rgb(0,0,0), inset 40px 30px 60px rgb(240,240,240), inset -18px -18px 30px rgb(0,0,0), inset 6px -6px 10px rgb(0,0,0);}
+    100% {box-shadow: -50px -15px 70px rgb(0,0,0), inset 3px -3px 20px rgb(240,240,240), inset 35px -35px 50px rgb(0,0,0), inset 40px 40px 60px rgb(240,240,240), inset -18px -18px 30px rgb(0,0,0), inset 6px -6px 10px rgb(0,0,0);}
+}
+
+

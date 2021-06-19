@@ -1,0 +1,377 @@
+/* MIKI PORTFOLIO STYLESHEET */
+/* miki hoffmann 2021-4 */
+html,
+body {
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--wht);
+}
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+:root {
+    --blk: rgb(0,0,0);
+    --wht: rgb(255,255,255);
+    --pnk: rgb(218,84,130); 
+}
+.hasBackground {
+    background-color: var(--blk);
+    background-image: url(../mikiPortfolioImages/mikiBG.png);
+    background-position-x: right;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+p {
+    margin: 1em 0em;
+}
+a {
+    text-decoration: none;
+    color: var(--wht);
+}
+/* HEADER */
+#topHeader {
+    position: fixed;
+    top: 0em;
+    height: 5em;
+    width: 100%;
+    max-width: 1000px;
+    padding: .7em 1.5em 0.6em 1.5em;
+    border-bottom: 2px solid var(--wht);
+    z-index: 1050;
+    margin-left: auto;
+    margin-right: auto;
+}
+#headerContent {
+    width: fit-content;
+    text-align: left;
+}
+#menu {
+    position: fixed;
+    top: 2.5em;
+    height: 2.5em;
+    width: 100%;
+    max-width: 1000px;
+    padding: .5em 0em;
+    z-index: 1050;
+}
+.menu h3 {
+    float: left;
+    margin: 0em .8em 0em 0em;
+    width: fit-content;
+    cursor: pointer;
+}
+.activeMenu {
+    color: var(--pnk);
+}
+/* MAIN PAGES */
+#mainArticle {
+    position: fixed;
+    top:0;
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: hidden;
+}
+.mainPage {
+    position: fixed;
+    top: 0;
+    height: 0%;
+    width: 100%;
+    max-width: 1000px;
+    padding: 1em 1em 0em 1em;
+    border-bottom: 2px solid var(--wht);
+    overflow-x: hidden;
+    text-overflow: auto;
+    transition: 1.6s;
+}
+.mainPage::-webkit-scrollbar {
+    display: none;
+}
+.pageContent {
+    position: relative;
+    top: 6em;
+    height: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+}
+.innerPageArticle {
+    position: relative;
+    height: auto;
+    font-size: 1.1em;
+    padding-bottom: 2em;
+    margin-bottom: 3em;
+}
+.innerPageArticle h2 {
+    margin-bottom: 1em;
+}
+/* ABOUT ME */
+#about p:last-of-type {
+    padding-top: 2em;
+}
+/* RESUME */
+.resumeSection {
+    position: relative;
+    width: 100%;
+}
+.resumePage {
+    position: relative;
+    top: 3em;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+    transition: 1.6s;
+}
+.resumeContent {
+    position: relative;
+    margin: 1em 0em 1em 0em;
+    padding: 1em 0em;
+    text-overflow: hidden;
+    border-top: 2px solid var(--wht);
+}
+.resumeContent h2 {
+    color: var(--pnk);
+    margin-bottom: 1em;
+}
+.resumeContent table {
+    margin: .5em 0em;
+    width: 100%;
+    border-bottom: none;
+}
+.resumeContent table td:nth-of-type(1) {
+    width: 30%;
+    vertical-align: top;
+}
+.resumeContent table td:nth-of-type(2) {
+    width: 70%;
+}
+.resumeList {
+    text-align: left;
+    
+}
+.resumeList ul {
+    list-style-type: none;
+    line-height: 1.5em;
+    padding-left: 2em;
+}
+.resumeContent hr {
+    width: 70%;
+    height: 1px;
+    margin: .5em 0 .5em 1em;
+    background-color: var(--pnk);
+    border: none;
+}
+#download {
+    width: 80%;
+    margin: 1.5em auto 1.5em auto;
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+.resumeLink {
+    display: block;
+    width: 90%;
+    margin: 1em auto 1em auto;
+    padding: .3em;
+    border: 1px solid var(--pnk);
+}
+/* GALLERY PAGE */
+.gallerySection {
+    width: 100%;
+    padding: 0 0 1em 0;
+}
+#galleryContainer {
+    display: block;
+    width: 16.5em;
+    height: 22.7em;   
+}
+#animationContainer {
+    display: block;
+    width: 100%;
+    height: 20em;   
+}
+.pauseButtons,
+.continueButtons {
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 3em;
+    width: 100%;
+    margin-left: 0;
+}
+.navButton {
+    display:inline-block;
+    height: auto;
+    width: fit-content;
+    margin: .3em .4em 0 0;
+    padding: .3em .6em .3em .6em;
+    text-align: center;
+    border: 1px solid var(--pnk);
+    cursor: pointer;
+}
+#designLinks {
+    width: 100%;
+}
+.frameLink {
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: 0 0 1em 0;
+    padding: .3em;
+    border: 1px solid var(--pnk);
+}
+.imageContainer {
+    display: block;
+    width: 100%;
+    height:fit-content;
+    margin: 0 auto 2em auto;
+}
+.imageContainer img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.imageCaption {
+    text-align: center;
+    margin-top: .3em;
+    padding: .7em 0;
+}
+/* GALLERY IFRAME & LARGE IMAGE */
+#iFrameContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    overflow: hidden;
+    transition: .6s;
+    z-index: 2000;
+}
+#iFrameClose {
+    position: absolute;
+    top: .6em;
+    right: .6em;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+#webDesigns {
+    position: relative;
+    display: block;
+    height: 85%;
+    width: 90%;
+    margin: 4em auto 0 auto;
+    border: 2px solid var(--pnk);
+}
+/* CONTACT PAGE */
+#contact p:nth-of-type(1) {
+    margin-top: 1.5em;
+}
+.contactImage {
+    width: 3em;
+    height: auto;
+    margin: 1em;
+    border: 2px solid var(--wht);
+    box-shadow: 5px 3px 15px var(--pnk);
+    border-radius: 50%;
+}
+/* BACK TO TOP BUTTON */
+.backToTop {
+    height: auto;
+    width: fit-content;
+    padding: .3em;
+    text-align: center;
+    border: 1px solid var(--pnk);
+    cursor: pointer;
+}
+.footer {
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin: 4em auto 1.5em auto;
+    font-size: .8em;
+    text-align: center;
+    border-top: 2px solid var(--wht);
+    border-bottom: 2px solid var(--wht);
+}
+.footer hr {
+    width: 75%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: var(--pnk);
+    border: none;
+}
+/* WEBPAGE WITH 12 COLUMN VIEW */
+/* COLUMN SETTINGS*/
+/* FOR MOBILE */
+[class*="column-"] {
+    width: 100%;
+}
+@media only screen and (max-width: 350px) {
+    body {
+        font-size: .7em;
+    }
+    #galleryContainer {
+        display: block;
+        width: 15em;
+        height: 21.2em;   
+    }
+}
+/* FOR TABLET */
+@media only screen and (min-width: 600px) {
+    .column-small-1 {width: 8.33%;}
+    .column-small-2 {width: 16.66%;}
+    .column-small-3 {width: 25%;}
+    .column-small-4 {width: 33.33%;}
+    .column-small-5 {width: 41.66%;}
+    .column-small-6 {width: 50%;}
+    .column-small-7 {width: 58.33%;}
+    .column-small-8 {width: 66.66%;}
+    .column-small-9 {width: 75%;}
+    .column-small-10 {width: 83.33%;}
+    .column-small-11 {width: 91.66%;}
+    .column-small-12 {width: 100%;}
+    [class*=column-] {
+        float: left;
+    }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .mainPage p {
+        font-size: 1.2em;
+        transition: 0s;
+    }
+    #galleryContainer {
+        display: block;
+        width: 19em;
+        height: 25.8em;   
+    }
+}
+/* FOR DESCTOP */
+@media only screen and (min-width: 768px) {    
+    .column-1 {width: 8.33%;}
+    .column-2 {width: 16.66%;}
+    .column-3 {width: 25%;}
+    .column-4 {width: 33.33%;}
+    .column-5 {width: 41.66%;}
+    .column-6 {width: 50%;}
+    .column-7 {width: 58.33%;}
+    .column-8 {width: 66.66%;}
+    .column-9 {width: 75%;}
+    .column-10 {width: 83.33%;}
+    .column-11 {width: 91.66%;}
+    .column-12 {width: 100%;}
+}
